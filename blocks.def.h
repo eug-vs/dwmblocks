@@ -1,7 +1,7 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{" ", "playerctl metadata --format='{{ artist }} - {{ title }}' --player=spotify 2> /dev/null", 3, 1},
+	{" ", "mpc current", 3, 1},
 	{" ", "task _get rc.context", 60, 0},
 	{" ", "task scriptable rc.verbose: +ACTIVE | head -n1", 15, 0},
 	{"", "xkb-switch", 0, 4},
