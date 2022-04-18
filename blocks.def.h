@@ -1,7 +1,6 @@
 //Modify this file to change what commands output to your statusbar, and recompile using the make command.
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
-	{" ", "task _get rc.context", 60, 0},
 	{"", "xkblayout-state print %s", 0, 4},
 	{"", "[ $(pulsemixer --get-mute) = 1 ] && echo 🔇 && exit || echo  $(pulsemixer --get-volume | cut -f 1 -d ' ')%", 0, 2},
 	{" ", "wpa_cli status | grep ^ssid= | sed 's/ssid=//'", 15, 0},
